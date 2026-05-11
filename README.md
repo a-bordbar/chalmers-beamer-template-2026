@@ -1,6 +1,8 @@
 # chalmers-beamer
 A [LaTeX Beamer](https://ctan.org/pkg/beamer?lang=en) theme for students and researchers at [Chalmers University of Technology](https://www.chalmers.se/). 
 
+Update (May 2026): Updated to the new Chalmers logo. Thanks to Zicong Jiang for providing the idea and figures! 
+
 # Example
 The template and an example can be found in the folder `template`. After compiling the `.tex` file, the resulting `.pdf` should look something like this: 
 
