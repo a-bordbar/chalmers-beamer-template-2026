@@ -1,5 +1,5 @@
 # chalmers-beamer-template-2026
-A LaTeX Beamer theme for Chalmers University of Technology presentations, updated for 2026 with the new Chalmers identity.
+A LaTeX Beamer theme for Chalmers University of Technology presentations, updated for 2026 with the new Chalmers color scheme.
 
 > **Disclaimer:** This repository is an updated version of the original theme from [chaeger/chalmers-beamer](https://github.com/chaeger/chalmers-beamer).
 
