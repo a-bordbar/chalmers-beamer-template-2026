@@ -11,7 +11,7 @@
 %
 % For Windows (MikTeX): 
 % $MIKTEXROOT\tex\latex\beamer\base\themes\
-\ProvidesPackage{beamerthemeChalmersB}[2021/05/19 v1.2 Chalmers Theme for LaTeX Beamer]
+\ProvidesPackage{beamerthemeChalmers}[2026/05/18 v2.0 Chalmers Theme for LaTeX Beamer]
 
 % load required packages
 \RequirePackage{xcolor}
@@ -27,10 +27,11 @@
 %==============================================================
 % colors <<<
 %==============================================================
-%\definecolor{ChalmersGray}{RGB}{204,204,204}
-%\definecolor{ChalmersBlue}{RGB}{0,74,141}
-\definecolor{ChalmersDarkBlue}{RGB}{41,41,102}
-%\definecolor{ChalmersDarkBlue}{RGB}{0,0,102}
+\definecolor{ChalmersPurple}{HTML}{472DBE}
+\definecolor{ChalmersPurpleDark}{HTML}{210D7A}
+\definecolor{ChalmersWestCoast}{HTML}{003050}
+\definecolor{ChalmersWestCoastLight}{HTML}{1A4562}
+\colorlet{ChalmersDarkBlue}{ChalmersPurple}
 
 \setbeamercolor{block title}{use=structure,fg=ChalmersDarkBlue,bg=ChalmersDarkBlue!20}
 \setbeamercolor{block title alerted}{use=alerted text,fg=alerted text.fg,bg=alerted text.fg!20!bg}
@@ -145,7 +146,7 @@
 	\begin{textblock}{2}(0,0.25)%
 		\begin{tikzpicture}[]
 			\node (a) at (0.0, 0) {};
-			\node (b) at (\paperwidth-1.25cm, 0) {\includegraphics[width=2cm]{chalmers_white_logo}};
+			\node (b) at (\paperwidth-1.25cm, 0) {\includegraphics[width=2cm]{chalmers_wordmark_white}};
 		\end{tikzpicture}
 		%\includegraphics[width=2cm]{chalmers_white_logo}
 	\end{textblock}%
@@ -176,15 +177,15 @@
 %==============================================================
 \defbeamertemplate*{title page}{chalmers}[1][]
 {
-	% blue background
+	% Chalmers colored field.
 	\begin{textblock}{0}(-1.0,-0.6)%
 		\tikz \path[fill=ChalmersDarkBlue, rounded corners=5pt] (2.4,1)--(2.4,-\paperheight+3.5cm)--(2.8,-\paperheight+3.5cm)--(2.8,-\paperheight+0cm)--(-1,-\paperheight+0cm)--(-1,1)-- cycle;
 	\end{textblock}%
-	% chalmers logo
+	% Chalmers Avancez emblem.
 	\begin{textblock}{0}(0.3,0.0)%
 		\begin{tikzpicture}[]
 			\node (a) at (0.0,0) {};
-			\node (b) at (0,-\paperheight+1.7cm) {\includegraphics[width=2cm]{chalmers_logo_white}};
+			\node (b) at (0,-\paperheight+1.7cm) {\includegraphics[width=2cm]{chalmers_emblem_white}};
 		\end{tikzpicture}
 		%\includegraphics[width=2cm]{chalmers_logo_white}
 	\end{textblock}%
