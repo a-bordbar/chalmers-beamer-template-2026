@@ -146,7 +146,7 @@
 	\begin{textblock}{2}(0,0.25)%
 		\begin{tikzpicture}[]
 			\node (a) at (0.0, 0) {};
-			\node (b) at (\paperwidth-1.25cm, 0) {\includegraphics[width=2cm]{chalmers_wordmark_white}};
+			\node (b) at (\paperwidth-1.25cm, 0) {\includegraphics[width=2cm,trim=0 13pt 0 0,clip]{chalmers_wordmark_white}};
 		\end{tikzpicture}
 		%\includegraphics[width=2cm]{chalmers_white_logo}
 	\end{textblock}%
@@ -221,7 +221,6 @@
 			\end{centering}
 			\vfill
 	\end{columns}
-	\setcounter{framenumber}{0}
 }
 
 \setbeamertemplate{title page}[chalmers]
